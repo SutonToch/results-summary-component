@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "HankenGrotesk", sans-serif;
+}
+
+body, h1, h2, h3, h5, p {
+    margin: 0;
+}
+
+.text-white {
+    color: hsl(0, 0%, 100%);
+}
+
+.results-summary-component {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.component {
+    padding: 1em;
+}
+
+.result {
+    font-size: 1.125rem;
+    color: #d8ccfe;
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 0 0 2em 2em;
+}
+
+.overall-score {
+    display: inline-block; /*use inherited text-align to center*/
+    width: 150px; /*band-aid solution, take a look again later*/
+    height: 150px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    margin: 1em 0;
+}
+
+.overall-score-number {
+    margin-top: 0.4em;
+    font-size: 4rem;
+}
+
+.overall-score-max {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.overall-score-comparison {
+    padding: 0 1em;
+    margin: 1em 0 2em 0;
+}
+
