@@ -67,7 +67,6 @@ body, h1, h2, h3, h4, h5, p {
 
 .summary {
     color: hsl(224, 30%, 27%);
-    padding: 1em;
 }
 
 .subscore-section {
@@ -126,4 +125,38 @@ body, h1, h2, h3, h4, h5, p {
 .btn:hover, .btn:focus {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+    .results-summary-component {
+        display: flex;
+        justify-content: center;
+        max-width: 1440px;
+    }
+
+    .component {
+        padding: 2em;
+    }
+
+    .result {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 333px;
+        border-radius: 1.5em;
+    }
+
+    .overall-score {
+        width: 175px;
+        height: 175px;
+    }
+
+    .overall-score-number {
+        margin-top: 0.6em;
+    }
+
+    .summary {
+        width: 25%;
+    }
 }
