@@ -3,8 +3,33 @@
     src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
-*, *:before, *:after {
+* {
     box-sizing: border-box;
+}
+
+:root {
+    --primary-light-red: hsl(0, 100%, 67%);
+    --primary-orangey-yellow: hsl(39, 100%, 56%);
+    --primary-green-teal: hsl(166, 100%, 37%);
+    --primary-cobalt-blue: hsl(234, 85%, 45%);
+
+    --background-light-red: hsla(0, 100%, 67%, 0.1);
+    --background-orangey-yellow: hsla(39, 100%, 56%, 0.1);
+    --background-green-teal: hsla(166, 100%, 37%, 0.1);
+    --background-cobalt-blue: hsla(234, 85%, 45%, 0.1);
+
+    --gradient-light-slate-blue: hsl(252, 100%, 67%);
+    --gradient-light-royal-blue: hsl(241, 81%, 54%);
+    --gradient-violet-blue: hsla(256, 72%, 46%, 1);
+    --gradient-persian-blue: hsla(241, 72%, 46%, 0);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-light-lavender: hsl(241, 100%, 89%);
+    --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
 }
 
 body {
@@ -12,12 +37,8 @@ body {
     font-size: 1.125rem;
 }
 
-body, h1, h2, h3, h4, h5, p {
-    margin: 0;
-}
-
 .text-white {
-    color: hsl(0, 0%, 100%);
+    color: var(--neutral-white);
 }
 
 .flex {
@@ -35,9 +56,10 @@ body, h1, h2, h3, h4, h5, p {
 }
 
 .result {
-    color: #d8ccfe;
+    color: var(--neutral-light-lavender);
     text-align: center;
-    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background: linear-gradient(
+        var(--gradient-light-slate-blue), var(--gradient-light-royal-blue));
     border-radius: 0 0 1em 1em;
 }
 
@@ -45,7 +67,8 @@ body, h1, h2, h3, h4, h5, p {
     display: inline-block; /*use inherited text-align to center*/
     width: 150px; /*are absolute values optimal here?*/
     height: 150px;
-    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    background: linear-gradient(
+        var(--gradient-violet-blue), var(--gradient-persian-blue));
     border-radius: 50%;
     margin: 1em 0;
 }
@@ -66,7 +89,7 @@ body, h1, h2, h3, h4, h5, p {
 }
 
 .summary {
-    color: hsl(224, 30%, 27%);
+    color: var(--neutral-dark-gray-blue);
 }
 
 .subscore-section {
@@ -77,23 +100,23 @@ body, h1, h2, h3, h4, h5, p {
 }
 
 .red-section {
-    color: hsl(0, 100%, 67%);
-    background-color: hsla(0, 100%, 67%, 0.1);
+    color: var(--primary-light-red);
+    background-color: var(--background-light-red);
 }
 
 .yellow-section {
-    color: hsl(39, 100%, 56%);
-    background-color: hsla(39, 100%, 56%, 0.1);
+    color: var(--primary-orangey-yellow);
+    background-color: var(--background-orangey-yellow);
 }
 
 .green-section {
-    color: hsl(166, 100%, 37%);
-    background-color: hsla(166, 100%, 37%, 0.1);
+    color: var(--primary-green-teal);
+    background-color: var(--background-green-teal);
 }
 
 .blue-section {
-    color: hsl(234, 85%, 45%);
-    background-color: hsla(234, 85%, 45%, 0.1);
+    color: var(--primary-cobalt-blue);
+    background-color: var(--background-cobalt-blue);
 }
 
 .icon {
@@ -102,28 +125,30 @@ body, h1, h2, h3, h4, h5, p {
 
 .subscore {
     margin-right: 0.5em;
-    color: hsl(224, 30%, 27%);
+    color: var(--neutral-dark-gray-blue);
     font-weight: bold;
 }
 
 .subscore-max {
-    color: hsla(224, 30%, 27%, 0.5);
+    color: var(--neutral-dark-gray-blue);
+    opacity: 0.5;
 }
 
 .btn {
     display: blocK;
     width: 100%;
     font-size: 1.125rem;
-    color: hsl(0, 0%, 100%);
+    color: var(--neutral-white);
     border: none;
     border-radius: 2em;
-    background-color: #303b59;
+    background-color: var(--neutral-dark-gray-blue);
     margin: 1.5em auto 0;
     padding: 1em;
 }
 
 .btn:hover, .btn:focus {
-    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background: linear-gradient(
+        var(--gradient-light-slate-blue), var(--gradient-light-royal-blue));
     cursor: pointer;
 }
 
@@ -132,6 +157,7 @@ body, h1, h2, h3, h4, h5, p {
         display: flex;
         justify-content: center;
         max-width: 1440px;
+        margin-bottom: 1em;
     }
 
     .component {
@@ -154,6 +180,10 @@ body, h1, h2, h3, h4, h5, p {
 
     .overall-score-number {
         margin-top: 0.6em;
+    }
+
+    .overall-score-comparison {
+        margin-bottom: 0;
     }
 
     .summary {
