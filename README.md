@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://sutontoch.github.io/results-summary-component/)
+- Live Site URL: [https://sutontoch.github.io/results-summary-component/](https://sutontoch.github.io/results-summary-component/)
 
 ## My process
 
