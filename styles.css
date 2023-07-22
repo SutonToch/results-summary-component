@@ -164,6 +164,8 @@ body {
         display: flex;
         max-width: 1440px;
         margin-bottom: 1em;
+        box-shadow: 10px 10px 50px var(--neutral-light-lavender);
+        border-radius: 1.5rem 0 0 1.5em;
     }
 
     .component {
