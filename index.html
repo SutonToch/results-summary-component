@@ -16,57 +16,63 @@
   </style>
 </head>
 <body>
-  <div class="results-summary-component">
-    <div class="component result">
-      <h3>Your Result</h3>
-      <div class="overall-score">
-        <h1 class="overall-score-number text-white">76</h1>
-        <h4 class="overall-score-max">of 100</h4>
+  <div id="website">
+    <div class="results-summary-component">
+      <div class="component result">
+        <h3>Your Result</h3>
+        <div class="overall-score">
+          <h1 class="overall-score-number text-white">76</h1>
+          <h4 class="overall-score-max">of 100</h4>
+        </div>
+        <div>
+          <h2 class="text-white">Great</h2>
+          <p class="overall-score-comparison">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
       </div>
-      <div>
-        <h2 class="text-white">Great</h2>
-        <p class="overall-score-comparison">You scored higher than 65% of the people who have taken these tests.</p>
+      <div class="component summary">
+        <h3>Summary</h3>
+        <div class="subscore-section red-section flex">
+          <div class="flex">
+            <img src="assets/images/icon-reaction.svg" alt="red lightning" class="icon">
+            <h4>Reaction</h4>
+          </div>
+          <div class="flex">
+            <span class="subscore">80</span><span class="subscore-max"> / 100</span>
+          </div>
+        </div>
+        <div class="subscore-section yellow-section flex">
+          <div class="flex">
+            <img src="assets/images/icon-memory.svg" alt="yellow brain" class="icon">
+            <h4>Memory</h4>
+          </div>
+          <div class="flex">
+            <span class="subscore">92</span><span class="subscore-max"> / 100</span>
+          </div>
+        </div>
+        <div class="subscore-section green-section flex">
+          <div class="flex">
+            <img src="assets/images/icon-verbal.svg" alt="green speech bubble" class="icon">
+            <h4>Verbal</h4>
+          </div>
+          <div class="flex">
+            <span class="subscore">61</span><span class="subscore-max"> / 100</span>
+          </div>
+        </div>
+        <div class="subscore-section blue-section flex">
+          <div class="flex">
+            <img src="assets/images/icon-visual.svg" alt="blue eye" class="icon">
+            <h4>Visual</h4>
+          </div>
+          <div class="flex">
+            <span class="subscore">72</span><span class="subscore-max"> / 100</span>       
+          </div>
+        </div>
+        <button class="btn" onclick="alert('What..? You clicked me!')">Continue</button>
       </div>
     </div>
-    <div class="component summary">
-      <h3>Summary</h3>
-      <div class="subscore-section red-section flex">
-        <div class="flex">
-          <img src="assets/images/icon-reaction.svg" alt="red lightning" class="icon">
-          <h4>Reaction</h4>
-        </div>
-        <div class="flex">
-          <span class="subscore">80</span><span class="subscore-max"> / 100</span>
-        </div>
-      </div>
-      <div class="subscore-section yellow-section flex">
-        <div class="flex">
-          <img src="assets/images/icon-memory.svg" alt="yellow brain" class="icon">
-          <h4>Memory</h4>
-        </div>
-        <div class="flex">
-          <span class="subscore">92</span><span class="subscore-max"> / 100</span>
-        </div>
-      </div>
-      <div class="subscore-section green-section flex">
-        <div class="flex">
-          <img src="assets/images/icon-verbal.svg" alt="green speech bubble" class="icon">
-          <h4>Verbal</h4>
-        </div>
-        <div class="flex">
-          <span class="subscore">61</span><span class="subscore-max"> / 100</span>
-        </div>
-      </div>
-      <div class="subscore-section blue-section flex">
-        <div class="flex">
-          <img src="assets/images/icon-visual.svg" alt="blue eye" class="icon">
-          <h4>Visual</h4>
-        </div>
-        <div class="flex">
-          <span class="subscore">72</span><span class="subscore-max"> / 100</span>       
-        </div>
-      </div>
-      <button class="btn" onclick="alert('What..? You clicked me!')">Continue</button>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Paul Pfütze</a>.
     </div>
   </div>
 </body>

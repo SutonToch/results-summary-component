@@ -153,12 +153,17 @@ body {
 }
 
 @media (min-width: 1440px) {
+    #website {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
     .results-summary-component {
         display: flex;
-        justify-content: center;
-        align-items: center;
         max-width: 1440px;
-        height: 100vh;
+        margin-bottom: 1em;
     }
 
     .component {
@@ -169,8 +174,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        max-width: 333px;
+        justify-content: space-between;
+        max-width: 350px;
         border-radius: 1.5em;
     }
 
@@ -188,6 +193,10 @@ body {
     }
 
     .summary {
-        width: 25%;
+        width: 350px;
+    }
+
+    .subscore-section {
+        font-size: 1rem;
     }
 }
